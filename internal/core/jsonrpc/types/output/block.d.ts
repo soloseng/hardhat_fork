@@ -12,7 +12,7 @@ export declare const rpcBlock: t.TypeC<{
     stateRoot: t.Type<Buffer, Buffer, unknown>;
     receiptsRoot: t.Type<Buffer, Buffer, unknown>;
     miner: t.Type<Buffer, Buffer, unknown>;
-    difficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
+    difficulty: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
     totalDifficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
     extraData: t.Type<Buffer, Buffer, unknown>;
     size: t.Type<import("bn.js"), import("bn.js"), unknown>;
@@ -62,7 +62,7 @@ export declare const rpcBlockWithTransactions: t.TypeC<{
     stateRoot: t.Type<Buffer, Buffer, unknown>;
     receiptsRoot: t.Type<Buffer, Buffer, unknown>;
     miner: t.Type<Buffer, Buffer, unknown>;
-    difficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
+    difficulty: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
     totalDifficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
     extraData: t.Type<Buffer, Buffer, unknown>;
     size: t.Type<import("bn.js"), import("bn.js"), unknown>;

@@ -220,9 +220,10 @@ describe("ForkBlockchain", () => {
             await chai_1.assert.isRejected(fb.getTotalDifficulty((0, random_1.randomHashBuffer)()), Error, "Block not found");
         });
         it("can get difficulty of the genesis block", async () => {
+            var _a;
             const genesis = await client.getBlockByNumber(new ethereumjs_util_1.BN(0), false);
             const difficulty = await fb.getTotalDifficulty(genesis === null || genesis === void 0 ? void 0 : genesis.hash);
-            chai_1.assert.equal(difficulty.toNumber(), genesis === null || genesis === void 0 ? void 0 : genesis.difficulty.toNumber());
+            chai_1.assert.equal(difficulty.toNumber(), (_a = genesis === null || genesis === void 0 ? void 0 : genesis.difficulty) === null || _a === void 0 ? void 0 : _a.toNumber());
         });
         it("does not return total difficulty of a deleted block", async () => {
             const block = createBlock(await fb.getLatestBlock());

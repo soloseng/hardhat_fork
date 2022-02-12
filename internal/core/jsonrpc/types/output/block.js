@@ -35,7 +35,7 @@ const baseBlockResponse = {
     stateRoot: base_types_1.rpcHash,
     receiptsRoot: base_types_1.rpcHash,
     miner: base_types_1.rpcAddress,
-    difficulty: base_types_1.rpcQuantity,
+    difficulty: (0, io_ts_1.optional)(base_types_1.rpcQuantity),
     totalDifficulty: base_types_1.rpcQuantity,
     extraData: base_types_1.rpcData,
     size: base_types_1.rpcQuantity,
