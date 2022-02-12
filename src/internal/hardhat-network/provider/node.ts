@@ -233,7 +233,7 @@ export class HardhatNode extends EventEmitter {
       blockchain = hardhatBlockchain;
     }
 
-    const txPool = new TxPool(stateManager, new BN(blockGasLimit), common);
+    const txPool = new TxPool(stateManager, new BN(blockGasLimit ?? 0), common);
 
     const vm = new VM({
       common,

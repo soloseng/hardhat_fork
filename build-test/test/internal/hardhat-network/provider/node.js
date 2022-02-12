@@ -572,6 +572,7 @@ describe("HardhatNode", () => {
             const remoteCommon = new common_1.default({ chain: chainId });
             const hardfork = remoteCommon.getHardforkByBlockNumber(blockToRun);
             it(`should run a ${networkName} block from ${hardfork} and produce the same results`, async function () {
+                var _a;
                 this.timeout(240000);
                 const forkConfig = {
                     jsonRpcUrl: url,
@@ -590,7 +591,7 @@ describe("HardhatNode", () => {
                     hardfork,
                     forkConfig,
                     forkCachePath: constants_1.FORK_TESTS_CACHE_PATH,
-                    blockGasLimit: rpcBlock.gasLimit.toNumber(),
+                    blockGasLimit: (_a = rpcBlock.gasLimit) === null || _a === void 0 ? void 0 : _a.toNumber(),
                     minGasPrice: new ethereumjs_util_1.BN(0),
                     genesisAccounts: [],
                     mempoolOrder: "priority",

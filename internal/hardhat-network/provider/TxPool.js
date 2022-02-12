@@ -310,7 +310,7 @@ class TxPool {
             throw new errors_1.InvalidInputError(`Transaction requires at least ${baseFee} gas but got ${gasLimit}`);
         }
         const blockGasLimit = this.getBlockGasLimit();
-        if (gasLimit.gt(blockGasLimit)) {
+        if (gasLimit.gt(blockGasLimit) && !blockGasLimit.isZero()) {
             throw new errors_1.InvalidInputError(`Transaction gas limit is ${gasLimit} and exceeds block gas limit of ${blockGasLimit}`);
         }
     }

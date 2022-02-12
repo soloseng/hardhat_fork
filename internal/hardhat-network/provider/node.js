@@ -173,7 +173,7 @@ class HardhatNode extends events_1.default {
             }
             blockchain = hardhatBlockchain;
         }
-        const txPool = new TxPool_1.TxPool(stateManager, new ethereumjs_util_1.BN(blockGasLimit), common);
+        const txPool = new TxPool_1.TxPool(stateManager, new ethereumjs_util_1.BN(blockGasLimit !== null && blockGasLimit !== void 0 ? blockGasLimit : 0), common);
         const vm = new vm_1.default({
             common,
             activatePrecompiles: true,

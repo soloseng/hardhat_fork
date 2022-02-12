@@ -467,7 +467,7 @@ export class TxPool {
 
     const blockGasLimit = this.getBlockGasLimit();
 
-    if (gasLimit.gt(blockGasLimit)) {
+    if (gasLimit.gt(blockGasLimit) && !blockGasLimit.isZero()) {
       throw new InvalidInputError(
         `Transaction gas limit is ${gasLimit} and exceeds block gas limit of ${blockGasLimit}`
       );

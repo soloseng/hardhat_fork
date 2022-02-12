@@ -10,7 +10,7 @@ export declare type NodeConfig = LocalNodeConfig | ForkedNodeConfig;
 export declare function isForkedNodeConfig(config: NodeConfig): config is ForkedNodeConfig;
 interface CommonConfig {
     automine: boolean;
-    blockGasLimit: number;
+    blockGasLimit: number | undefined;
     chainId: number;
     genesisAccounts: GenesisAccount[];
     hardfork: string;

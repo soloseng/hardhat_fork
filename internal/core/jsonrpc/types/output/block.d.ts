@@ -6,7 +6,7 @@ export declare const rpcBlock: t.TypeC<{
     hash: t.Type<Buffer | null, Buffer | null, unknown>;
     parentHash: t.Type<Buffer, Buffer, unknown>;
     nonce: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
-    sha3Uncles: t.Type<Buffer, Buffer, unknown>;
+    sha3Uncles: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
     logsBloom: t.Type<Buffer, Buffer, unknown>;
     transactionsRoot: t.Type<Buffer, Buffer, unknown>;
     stateRoot: t.Type<Buffer, Buffer, unknown>;
@@ -16,10 +16,10 @@ export declare const rpcBlock: t.TypeC<{
     totalDifficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
     extraData: t.Type<Buffer, Buffer, unknown>;
     size: t.Type<import("bn.js"), import("bn.js"), unknown>;
-    gasLimit: t.Type<import("bn.js"), import("bn.js"), unknown>;
+    gasLimit: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
     gasUsed: t.Type<import("bn.js"), import("bn.js"), unknown>;
     timestamp: t.Type<import("bn.js"), import("bn.js"), unknown>;
-    uncles: t.ArrayC<t.Type<Buffer, Buffer, unknown>>;
+    uncles: t.Type<Buffer[] | undefined, Buffer[] | undefined, unknown>;
     mixHash: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
     baseFeePerGas: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
 }>;
@@ -56,7 +56,7 @@ export declare const rpcBlockWithTransactions: t.TypeC<{
     hash: t.Type<Buffer | null, Buffer | null, unknown>;
     parentHash: t.Type<Buffer, Buffer, unknown>;
     nonce: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
-    sha3Uncles: t.Type<Buffer, Buffer, unknown>;
+    sha3Uncles: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
     logsBloom: t.Type<Buffer, Buffer, unknown>;
     transactionsRoot: t.Type<Buffer, Buffer, unknown>;
     stateRoot: t.Type<Buffer, Buffer, unknown>;
@@ -66,10 +66,10 @@ export declare const rpcBlockWithTransactions: t.TypeC<{
     totalDifficulty: t.Type<import("bn.js"), import("bn.js"), unknown>;
     extraData: t.Type<Buffer, Buffer, unknown>;
     size: t.Type<import("bn.js"), import("bn.js"), unknown>;
-    gasLimit: t.Type<import("bn.js"), import("bn.js"), unknown>;
+    gasLimit: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
     gasUsed: t.Type<import("bn.js"), import("bn.js"), unknown>;
     timestamp: t.Type<import("bn.js"), import("bn.js"), unknown>;
-    uncles: t.ArrayC<t.Type<Buffer, Buffer, unknown>>;
+    uncles: t.Type<Buffer[] | undefined, Buffer[] | undefined, unknown>;
     mixHash: t.Type<Buffer | undefined, Buffer | undefined, unknown>;
     baseFeePerGas: t.Type<import("bn.js") | undefined, import("bn.js") | undefined, unknown>;
 }>;
