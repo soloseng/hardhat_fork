@@ -1,0 +1,21 @@
+import { BN } from "ethereumjs-util";
+import { RpcTransactionRequestInput } from "../../../../src/internal/core/jsonrpc/types/input/transactionRequest";
+import { AccessListBufferItem, AccessListTransactionParams, EIP1559TransactionParams, LegacyTransactionParams } from "../../../../src/internal/hardhat-network/provider/node-types";
+import { AccessListEIP2930RpcTransactionOutput, EIP1559RpcTransactionOutput, LegacyRpcTransactionOutput, RpcAccessListOutput, RpcReceiptOutput } from "../../../../src/internal/hardhat-network/provider/output";
+import { EthereumProvider } from "../../../../src/types";
+export declare function assertProviderError(provider: EthereumProvider, method: string, params?: any[], message?: string, code?: number): Promise<void>;
+export declare function assertNotSupported(provider: EthereumProvider, method: string): Promise<void>;
+export declare function assertInternalError(provider: EthereumProvider, method: string, params?: any[], message?: string): Promise<void>;
+export declare function assertInvalidArgumentsError(provider: EthereumProvider, method: string, params?: any[], message?: string): Promise<void>;
+export declare function assertInvalidInputError(provider: EthereumProvider, method: string, params?: any[], message?: string): Promise<void>;
+export declare function assertQuantity(actual: any, quantity: number | BN, message?: string): void;
+export declare function assertNodeBalances(provider: EthereumProvider, expectedBalances: Array<number | BN>): Promise<void>;
+export declare function assertPendingNodeBalances(provider: EthereumProvider, expectedBalances: Array<number | BN>): Promise<void>;
+export declare function assertTransactionFailure(provider: EthereumProvider, txData: RpcTransactionRequestInput, message?: string, code?: number): Promise<void>;
+export declare function assertReceiptMatchesGethOne(actual: any, gethReceipt: RpcReceiptOutput, expectedBlockNumber: number | BN): void;
+export declare function assertLegacyTransaction(tx: LegacyRpcTransactionOutput, txHash: string, txParams: LegacyTransactionParams, blockNumber?: number, blockHash?: string, txIndex?: number): void;
+export declare function assertAccessListTransaction(tx: AccessListEIP2930RpcTransactionOutput, txHash: string, txParams: AccessListTransactionParams, blockNumber?: number, blockHash?: string, txIndex?: number): void;
+export declare function assertEIP1559Transaction(tx: EIP1559RpcTransactionOutput, txHash: string, txParams: EIP1559TransactionParams, blockNumber?: number, blockHash?: string, txIndex?: number): void;
+export declare function assertEqualAccessLists(txAccessList: RpcAccessListOutput, txParamsAccessList: AccessListBufferItem[]): void;
+export declare function assertLatestBlockNumber(provider: EthereumProvider, latestBlockNumber: number): Promise<void>;
+//# sourceMappingURL=assertions.d.ts.map
