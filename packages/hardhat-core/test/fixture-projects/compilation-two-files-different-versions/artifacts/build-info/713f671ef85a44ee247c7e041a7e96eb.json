@@ -1,0 +1,106 @@
+{
+  "id": "713f671ef85a44ee247c7e041a7e96eb",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.6",
+  "solcLongVersion": "0.6.6+commit.6c089d02",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/B.sol": {
+        "content": "pragma solidity ^0.6.1;\n\ncontract B {}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": false,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/B.sol": {
+        "B": {
+          "abi": [],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122055602de9d6814e2c8fb268d65c1f80c6577dafed73b2d10867487c1900f8a49164736f6c63430006060033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SSTORE PUSH1 0x2D 0xE9 0xD6 DUP2 0x4E 0x2C DUP16 0xB2 PUSH9 0xD65C1F80C6577DAFED PUSH20 0xB2D10867487C1900F8A49164736F6C6343000606 STOP CALLER ",
+              "sourceMap": "25:13:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;25:13:0;;;;;;;"
+            },
+            "deployedBytecode": {
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea264697066735822122055602de9d6814e2c8fb268d65c1f80c6577dafed73b2d10867487c1900f8a49164736f6c63430006060033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SSTORE PUSH1 0x2D 0xE9 0xD6 DUP2 0x4E 0x2C DUP16 0xB2 PUSH9 0xD65C1F80C6577DAFED PUSH20 0xB2D10867487C1900F8A49164736F6C6343000606 STOP CALLER ",
+              "sourceMap": "25:13:0:-:0;;;12:1:-1;9;2:12"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/B.sol\":\"B\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/B.sol\":{\"keccak256\":\"0x08cd5285385e94e386d84a96da42b4ea181771bf523fbbc61450a7949e8407ac\",\"urls\":[\"bzz-raw://d246da01f7b57702d82920808e51b7780463110985f88cccdfda3857f9c9b68c\",\"dweb:/ipfs/QmQ9g1wN1JWNugt4qpnNTpbCoHZUFQC54SSQ96uFsreoUC\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/B.sol": {
+        "ast": {
+          "absolutePath": "contracts/B.sol",
+          "exportedSymbols": {
+            "B": [
+              2
+            ]
+          },
+          "id": 3,
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.6",
+                ".1"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "0:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": null,
+              "fullyImplemented": true,
+              "id": 2,
+              "linearizedBaseContracts": [
+                2
+              ],
+              "name": "B",
+              "nodeType": "ContractDefinition",
+              "nodes": [],
+              "scope": 3,
+              "src": "25:13:0"
+            }
+          ],
+          "src": "0:39:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

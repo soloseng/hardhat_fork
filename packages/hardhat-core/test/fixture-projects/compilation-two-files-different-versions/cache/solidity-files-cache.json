@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/bowd/Workspace/oss/hardhat/packages/hardhat-core/test/fixture-projects/compilation-two-files-different-versions/contracts/A.sol": {
+      "lastModificationDate": 1644692173465,
+      "contentHash": "a65d369755f6c9d1fb7e38aab9bccb11",
+      "sourceName": "contracts/A.sol",
+      "solcConfig": {
+        "version": "0.5.5",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.1"
+      ],
+      "artifacts": [
+        "A"
+      ]
+    },
+    "/home/bowd/Workspace/oss/hardhat/packages/hardhat-core/test/fixture-projects/compilation-two-files-different-versions/contracts/B.sol": {
+      "lastModificationDate": 1644692173465,
+      "contentHash": "5d8fc0b65ee1cff61bbdf032e40eab8c",
+      "sourceName": "contracts/B.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.1"
+      ],
+      "artifacts": [
+        "B"
+      ]
+    }
+  }
+}

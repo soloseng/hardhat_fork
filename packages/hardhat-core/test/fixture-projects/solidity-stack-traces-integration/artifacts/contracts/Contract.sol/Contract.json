@@ -1,0 +1,17 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Contract",
+  "sourceName": "contracts/Contract.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50600080fdfe",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820d636dde58d26efc4b725f6e3a9a0a79fadb306c0f4541cdd33caf1ea552cfb5464736f6c634300050f0032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

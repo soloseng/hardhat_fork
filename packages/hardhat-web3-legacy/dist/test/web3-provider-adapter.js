@@ -1,0 +1,108 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const chai_1 = require("chai");
+const web3_1 = __importDefault(require("web3"));
+const web3_provider_adapter_1 = require("../src/web3-provider-adapter");
+const helpers_1 = require("./helpers");
+let nextId = 1;
+function createJsonRpcRequest(method, params = []) {
+    return {
+        id: nextId++,
+        jsonrpc: "2.0",
+        method,
+        params,
+    };
+}
+describe("Web3 provider adapter", function () {
+    let realWeb3Provider;
+    let adaptedProvider;
+    (0, helpers_1.useEnvironment)("hardhat-project");
+    beforeEach(function () {
+        realWeb3Provider = new web3_1.default.providers.HttpProvider("http://localhost:8545");
+        adaptedProvider = new web3_provider_adapter_1.Web3HTTPProviderAdapter(this.env.network.provider);
+        chai_1.assert.isDefined(this.env.web3);
+    });
+    it("Should throw if send is called", async function () {
+        chai_1.assert.throws(() => adaptedProvider.send(), "Synchronous requests are not supported, use pweb3 instead");
+        chai_1.assert.throws(() => adaptedProvider.send({ method: "asd" }), `Trying to call RPC method asd, but synchronous requests are not supported, use pweb3 instead`);
+    });
+    it("Should always return true when isConnected is called", function () {
+        chai_1.assert.isTrue(adaptedProvider.isConnected());
+    });
+    it("Should return the same as the real provider for sigle requests", function (done) {
+        const request = createJsonRpcRequest("eth_accounts");
+        realWeb3Provider.sendAsync(request, (error, response) => {
+            adaptedProvider.sendAsync(request, (error2, response2) => {
+                chai_1.assert.deepEqual(error2, error);
+                chai_1.assert.deepEqual(response2, response);
+                done();
+            });
+        });
+    });
+    it("Should return the same as the real provider for batched requests", function (done) {
+        const requests = [
+            createJsonRpcRequest("eth_accounts"),
+            createJsonRpcRequest("net_version"),
+            createJsonRpcRequest("eth_accounts"),
+        ];
+        realWeb3Provider.sendAsync(requests, (error, response) => {
+            adaptedProvider.sendAsync(requests, (error2, response2) => {
+                chai_1.assert.deepEqual(error2, error);
+                chai_1.assert.deepEqual(response2, response);
+                done();
+            });
+        });
+    });
+    it("Should return the same on error", function (done) {
+        // We disable this test for RskJ
+        // See: https://github.com/rsksmart/rskj/issues/876
+        this.env.network.provider
+            .send("web3_clientVersion")
+            .then((version) => {
+            if (version.includes("RskJ")) {
+                done();
+                return;
+            }
+            const request = createJsonRpcRequest("error_please");
+            realWeb3Provider.sendAsync(request, (error, response) => {
+                adaptedProvider.sendAsync(request, (error2, response2) => {
+                    chai_1.assert.deepEqual(error2, error);
+                    chai_1.assert.equal(response2.error.message, response.error.message);
+                    done();
+                });
+            });
+        })
+            .then(() => { }, () => { });
+    });
+    it("Should let all requests complete, even if one of them fails", function (done) {
+        const requests = [
+            createJsonRpcRequest("eth_accounts"),
+            createJsonRpcRequest("error_please"),
+            createJsonRpcRequest("eth_accounts"),
+        ];
+        realWeb3Provider.sendAsync(requests, (error, response) => {
+            adaptedProvider.sendAsync(requests, (error2, response2) => {
+                chai_1.assert.deepEqual(error2, error);
+                chai_1.assert.deepEqual(response2[0], response[0]);
+                // Ganache doesn't return a value for requests after the failing one,
+                // so we don't either. Otherwise, this should be tested.
+                // assert.lengthOf(response2!, response!.length);
+                // assert.isUndefined(responseFromAdapted![2]);![2]);
+                // We disable this test for RskJ
+                // See: https://github.com/rsksmart/rskj/issues/876
+                this.env.network.provider
+                    .send("web3_clientVersion")
+                    .then((version) => {
+                    if (version.includes("RskJ")) {
+                        chai_1.assert.equal(response2[1].error.message, response[1].error.message);
+                    }
+                })
+                    .then(done, done);
+            });
+        });
+    });
+});
+//# sourceMappingURL=web3-provider-adapter.js.map

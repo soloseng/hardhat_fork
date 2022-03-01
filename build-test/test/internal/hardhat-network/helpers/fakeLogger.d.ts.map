@@ -1,0 +1,1 @@
+{"version":3,"file":"fakeLogger.d.ts","sourceRoot":"","sources":["../../../../../test/internal/hardhat-network/helpers/fakeLogger.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,kEAAkE,CAAC;AAEjG,qBAAa,iBAAkB,SAAQ,aAAa;IAC3C,KAAK,EAAE,MAAM,EAAE,CAAM;gBAEhB,OAAO,EAAE,OAAO;IAYrB,SAAS,IAAI,MAAM;IAInB,KAAK;CAGb"}
