@@ -355,7 +355,7 @@ describe("ForkBlockchain", () => {
     it("can get difficulty of the genesis block", async () => {
       const genesis = await client.getBlockByNumber(new BN(0), false);
       const difficulty = await fb.getTotalDifficulty(genesis?.hash!);
-      assert.equal(difficulty.toNumber(), genesis?.difficulty.toNumber());
+      assert.equal(difficulty.toNumber(), genesis?.difficulty?.toNumber());
     });
 
     it("does not return total difficulty of a deleted block", async () => {
