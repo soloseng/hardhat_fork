@@ -738,7 +738,7 @@ describe("HardhatNode", () => {
           hardfork,
           forkConfig,
           forkCachePath: FORK_TESTS_CACHE_PATH,
-          blockGasLimit: rpcBlock.gasLimit?.toNumber(),
+          blockGasLimit: rpcBlock.gasLimit?.toNumber() ?? 0,
           minGasPrice: new BN(0),
           genesisAccounts: [],
           mempoolOrder: "priority",

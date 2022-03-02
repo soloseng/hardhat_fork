@@ -101,6 +101,7 @@ import {
   shouldShowTransactionTypeForHardfork,
 } from "./output";
 import { ReturnData } from "./return-data";
+import { celoRegistryProxy } from "./predeployed-contracts";
 import { FakeSenderAccessListEIP2930Transaction } from "./transactions/FakeSenderAccessListEIP2930Transaction";
 import { FakeSenderEIP1559Transaction } from "./transactions/FakeSenderEIP1559Transaction";
 import { FakeSenderTransaction } from "./transactions/FakeSenderTransaction";
@@ -114,6 +115,7 @@ import { makeStateTrie } from "./utils/makeStateTrie";
 import { makeForkCommon } from "./utils/makeForkCommon";
 import { putGenesisBlock } from "./utils/putGenesisBlock";
 import { txMapToArray } from "./utils/txMapToArray";
+import { makeAccount } from "./utils/makeAccount";
 
 const log = debug("hardhat:core:hardhat-network:node");
 
@@ -207,6 +209,20 @@ export class HardhatNode extends EventEmitter {
         common,
         trie: stateTrie,
       });
+
+      // <CELO> Pre-deploy registry contract at static address
+      const registryProxyOwner = makeAccount(genesisAccounts[0]);
+      const registryProxy = celoRegistryProxy(registryProxyOwner.address);
+      await stateManager.putContractCode(
+        registryProxy.address,
+        registryProxy.code
+      );
+      await stateManager.putContractStorage(
+        registryProxy.address,
+        registryProxy.storageKey,
+        registryProxy.storageValue
+      );
+      // </CELO>
 
       const hardhatBlockchain = new HardhatBlockchain();
 
