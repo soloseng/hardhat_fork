@@ -246,7 +246,14 @@ export class JsonRpcClient {
       }
     }
 
-    const rawResult = await this._send(method, params);
+    // XXX: Hacky thing to get forking from a version of ganache
+    // working, which returns "0x0" instead of "0x0000...000"
+    // and that doesn't pass the type check for DATA
+    let rawResult = await this._send(method, params);
+    if (rawResult === "0x0" && tType.name === "DATA") {
+      rawResult = "0x00";
+    }
+
     const decodedResult = decodeJsonRpcResponse(rawResult, tType);
 
     const blockNumber = getMaxAffectedBlockNumber(decodedResult);
