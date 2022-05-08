@@ -230,7 +230,7 @@ export class HardhatNode extends EventEmitter {
       );
       // </CELO>
 
-      const hardhatBlockchain = new HardhatBlockchain();
+      const hardhatBlockchain = new HardhatBlockchain(common);
 
       const genesisBlockBaseFeePerGas = hardforkGte(
         hardfork,
