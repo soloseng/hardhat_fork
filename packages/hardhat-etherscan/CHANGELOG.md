@@ -1,5 +1,31 @@
 # @nomiclabs/hardhat-etherscan
 
+## 3.1.2
+
+### Patch Changes
+
+- eb3f7a7bd: - Added Arbitrum Goerli to the list of supported networks.
+  - Fixed the Optimism Goerli URLs.
+
+## 3.1.1
+
+### Patch Changes
+
+- adb075d42: Added gnosis as an alias for xdai (thanks @alebanzas!)
+- a30dcee88: Added Optimism Goerli and removed Optimism Kovan
+
+## 3.1.0
+
+### Minor Changes
+
+- c4283f816: Added support for verifying contracts on custom explorers. Thanks to @no2chem for the idea and initial implementation of this feature.
+
+## 3.0.4
+
+### Patch Changes
+
+- e3dcfde4a: Add support for Sepolia (Thanks @pcaversaccio!)
+
 ## 3.0.3
 
 ### Patch Changes

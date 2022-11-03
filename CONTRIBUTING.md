@@ -14,7 +14,7 @@ An issue being assigned does not mean that we are actively working on addressing
 
 ## Project structure
 
-This repository is a monorepo handled with [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/).
+This repository is a monorepo handled with [Yarn v1](https://classic.yarnpkg.com/lang/en/) and [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/).
 
 There's a folder for each subproject in `packages/`. All of them are plugins, except for `/packages/hardhat-core` which is the main project (i.e. the one that's published as [hardhat](https://npmjs.com/package/hardhat) in npm).
 
@@ -74,7 +74,7 @@ Hardhat and its plugins are optimized for keeping startup time low.
 
 This is done by selectively requiring dependencies when needed using `import` or `require` following this criteria:
 
-1. If something is only imported for its type, and NOT its value, use a top-level `import ... from "mod"`
+1. If something is only imported for its type, and NOT its value, use a top-level `import ... from "mod"`.
 1. If a module is in the "Essential modules" list below, use a top-level `import ... from "mod"`.
 1. Otherwise, use `await import` or `require` locally in the functions that use it:
    1. If the function is sync, use node's `require`
