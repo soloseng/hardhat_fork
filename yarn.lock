@@ -360,7 +360,7 @@
     ethereum-cryptography "^1.1.2"
     ethers "^5.7.1"
 
-"@ethereumjs/blockchain@^6.0.0", "@ethereumjs/blockchain@^6.0.1":
+"@ethereumjs/blockchain@^6.0.0", "@ethereumjs/blockchain@^6.0.2":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@ethereumjs/blockchain/-/blockchain-6.0.2.tgz#51f7b573dccc976077a699f08882276e54ab1fd8"
   integrity sha512-32zKVQ8iOb7oOwKqGsLvdAzGaTQP6FepW6ssTycJOZ2r0NAHcN8+dsk77mv48yZkuQ4kt0D/73bj8lApiO5Uew==
@@ -406,10 +406,10 @@
     bigint-crypto-utils "^3.0.23"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/evm@^1.2.0", "@ethereumjs/evm@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@ethereumjs/evm/-/evm-1.2.2.tgz#8ab944dcf17308fe7ee00b9026984bd756c18501"
-  integrity sha512-veqCg9Od9dGvZVdREZvMGm+N4tyNQQd8ny639M9yFxMy7jF36hE6PSicgGZlya/fRpQKCVnosrk5PoM043ZgNQ==
+"@ethereumjs/evm@^1.2.3-celo1", "@ethereumjs/evm@^1.2.4":
+  version "1.2.4"
+  resolved "http://localhost:4873/@ethereumjs/evm/-/evm-1.2.4.tgz#c2787bba5723dcb90ad0af79bd1d8bdbe84239b4"
+  integrity sha512-F+SJJ7ENI73A0dNZtz+sqjkE7Qtd5SMnOEs1OOOG89PYTIo4Wbckofq0rea+XpZIxA6Zes3rNWXa6ao9Fl9Vrg==
   dependencies:
     "@ethereumjs/common" "^3.0.1"
     "@ethereumjs/util" "^8.0.2"
@@ -475,15 +475,15 @@
     async "^3.2.4"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/vm@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@ethereumjs/vm/-/vm-6.2.0.tgz#770c054667147277ac0e69a93355316abe19e70e"
-  integrity sha512-YtgR4tHDqVhJE2tzQK58ckSZ2+/AOMSKiuFiQgdlJYQfaCtzJbFIdGdiiItsauPxm1HQr3Yv5kDdJOx+8YbzOA==
+"@ethereumjs/vm@^6.2.2":
+  version "6.2.2"
+  resolved "http://localhost:4873/@ethereumjs/vm/-/vm-6.2.2.tgz#ed1bb85bda6179bb7519edc914c7e920c8fbf48a"
+  integrity sha512-SqdB1Z9uu4B5FF8FLSt4KyXj1VaCzKGqKmUfKMrcB9jJ1AAi+6Fyba0k5bs5sesd3Vsbu+1gNR6bIDyR9BHy9Q==
   dependencies:
     "@ethereumjs/block" "^4.0.1"
-    "@ethereumjs/blockchain" "^6.0.1"
+    "@ethereumjs/blockchain" "^6.0.2"
     "@ethereumjs/common" "^3.0.1"
-    "@ethereumjs/evm" "^1.2.0"
+    "@ethereumjs/evm" "^1.2.3-celo1"
     "@ethereumjs/rlp" "^4.0.0"
     "@ethereumjs/statemanager" "^1.0.1"
     "@ethereumjs/trie" "^5.0.1"
