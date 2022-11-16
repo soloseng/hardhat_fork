@@ -1,10 +1,10 @@
-import { Common } from "@nomicfoundation/ethereumjs-common";
+import { Common } from "@ethereumjs/common";
 import {
   AccessListEIP2930Transaction,
   AccessListEIP2930TxData,
   AccessListEIP2930ValuesArray,
   TxOptions,
-} from "@nomicfoundation/ethereumjs-tx";
+} from "@ethereumjs/tx";
 import { Address } from "@ethereumjs/util";
 
 import { InternalError } from "../../../core/providers/errors";

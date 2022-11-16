@@ -1,7 +1,7 @@
 import * as t from "io-ts";
 
 import { SignTypedDataVersion, signTypedData } from "@metamask/eth-sig-util";
-import { FeeMarketEIP1559Transaction } from "@nomicfoundation/ethereumjs-tx";
+import { FeeMarketEIP1559Transaction } from "@ethereumjs/tx";
 import { EIP1193Provider, RequestArguments } from "../../../types";
 import { HardhatError } from "../errors";
 import { ERRORS } from "../errors-list";
@@ -241,10 +241,10 @@ export class LocalAccountsProvider extends ProviderWrapperWithChainId {
     privateKey: Buffer
   ): Promise<Buffer> {
     const { AccessListEIP2930Transaction, Transaction } = await import(
-      "@nomicfoundation/ethereumjs-tx"
+      "@ethereumjs/tx"
     );
 
-    const { Common } = await import("@nomicfoundation/ethereumjs-common");
+    const { Common } = await import("@ethereumjs/common");
 
     const txData = {
       ...transactionRequest,

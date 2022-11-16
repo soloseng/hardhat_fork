@@ -1,11 +1,11 @@
-import { Common } from "@nomicfoundation/ethereumjs-common";
+import { Common } from "@ethereumjs/common";
 import * as rlp from "@nomicfoundation/ethereumjs-rlp";
-import { AccessListEIP2930Transaction } from "@nomicfoundation/ethereumjs-tx";
+import { AccessListEIP2930Transaction } from "@ethereumjs/tx";
 import {
   AccessListEIP2930TxData,
   AccessListEIP2930ValuesArray,
   TxOptions,
-} from "@nomicfoundation/ethereumjs-tx/dist/types";
+} from "@ethereumjs/tx/dist/types";
 import { Address, arrToBufArr, bufferToInt } from "@ethereumjs/util";
 
 import {

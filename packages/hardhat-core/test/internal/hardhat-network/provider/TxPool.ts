@@ -1,8 +1,5 @@
-import { Common } from "@nomicfoundation/ethereumjs-common";
-import {
-  StateManager,
-  DefaultStateManager,
-} from "@nomicfoundation/ethereumjs-statemanager";
+import { Common } from "@ethereumjs/common";
+import { StateManager, DefaultStateManager } from "@ethereumjs/statemanager";
 import { Account, Address, bufferToHex, toBuffer } from "@ethereumjs/util";
 import { assert } from "chai";
 

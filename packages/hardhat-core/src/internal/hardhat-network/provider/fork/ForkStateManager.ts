@@ -1,4 +1,4 @@
-import { StateManager } from "@nomicfoundation/ethereumjs-statemanager";
+import { StateManager } from "@ethereumjs/statemanager";
 import {
   Account,
   bigIntToHex,

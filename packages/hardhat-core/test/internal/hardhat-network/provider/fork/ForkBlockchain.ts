@@ -1,5 +1,5 @@
-import { Block } from "@nomicfoundation/ethereumjs-block";
-import { Common } from "@nomicfoundation/ethereumjs-common";
+import { Block } from "@ethereumjs/block";
+import { Common } from "@ethereumjs/common";
 import { bufferToBigInt, bufferToHex, toBuffer } from "@ethereumjs/util";
 import { assert } from "chai";
 

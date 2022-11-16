@@ -1,6 +1,6 @@
-import { Block } from "@nomicfoundation/ethereumjs-block";
-import { Common } from "@nomicfoundation/ethereumjs-common";
-import { TypedTransaction } from "@nomicfoundation/ethereumjs-tx";
+import { Block } from "@ethereumjs/block";
+import { Common } from "@ethereumjs/common";
+import { TypedTransaction } from "@ethereumjs/tx";
 import { zeros } from "@ethereumjs/util";
 
 import { BlockchainBase } from "./BlockchainBase";

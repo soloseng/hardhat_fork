@@ -1,14 +1,11 @@
-import { Common } from "@nomicfoundation/ethereumjs-common";
-import {
-  FeeMarketEIP1559Transaction,
-  TxOptions,
-} from "@nomicfoundation/ethereumjs-tx";
+import { Common } from "@ethereumjs/common";
+import { FeeMarketEIP1559Transaction, TxOptions } from "@ethereumjs/tx";
 import { Address } from "@ethereumjs/util";
 
 import {
   FeeMarketEIP1559TxData,
   FeeMarketEIP1559ValuesArray,
-} from "@nomicfoundation/ethereumjs-tx/src/types";
+} from "@ethereumjs/tx/src/types";
 import { InternalError } from "../../../core/providers/errors";
 import * as BigIntUtils from "../../../util/bigint";
 

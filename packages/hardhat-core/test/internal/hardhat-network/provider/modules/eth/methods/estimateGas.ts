@@ -6,7 +6,7 @@ import {
   AccessListEIP2930Transaction,
   FeeMarketEIP1559Transaction,
   Transaction,
-} from "@nomicfoundation/ethereumjs-tx";
+} from "@ethereumjs/tx";
 
 import {
   numberToRpcQuantity,
