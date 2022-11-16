@@ -1397,15 +1397,10 @@
     mcl-wasm "^0.7.1"
     rustbn.js "~0.2.0"
 
-"@nomicfoundation/ethereumjs-rlp@^4.0.0":
+"@nomicfoundation/ethereumjs-rlp@^4.0.0", "@nomicfoundation/ethereumjs-rlp@^4.0.0-beta.2":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@nomicfoundation/ethereumjs-rlp/-/ethereumjs-rlp-4.0.0.tgz#d9a9c5f0f10310c8849b6525101de455a53e771d"
   integrity sha512-GaSOGk5QbUk4eBP5qFbpXoZoZUj/NrW7MRa0tKY4Ew4c2HAS0GXArEMAamtFrkazp0BO4K5p2ZCG3b2FmbShmw==
-
-"@nomicfoundation/ethereumjs-rlp@^4.0.0-beta.2":
-  version "4.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@nomicfoundation/ethereumjs-rlp/-/ethereumjs-rlp-4.0.0-rc.1.tgz#eb6b56c9e5d6cbdd4f4ce0c337c879a74ab60187"
-  integrity sha512-ncRj4Ip4IPi+gwgexj3UCyWgfnOJ6ARwEQmiI/H3owS9vOnSCGV1yatX7v1n+wTdvazR0VQLdjt94nkeyDeesQ==
 
 "@nomicfoundation/ethereumjs-statemanager@^1.0.0":
   version "1.0.0"
