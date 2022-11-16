@@ -8,7 +8,7 @@ import {
   KECCAK256_NULL,
   toBuffer,
   unpadBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import { Map as ImmutableMap, Record as ImmutableRecord } from "immutable";
 
 import { assertHardhatInvariant } from "../../../core/errors";

@@ -1,11 +1,7 @@
 import { Common } from "@nomicfoundation/ethereumjs-common";
 import { AccessListEIP2930Transaction } from "@nomicfoundation/ethereumjs-tx";
 import { assert } from "chai";
-import {
-  bufferToHex,
-  privateToAddress,
-  toBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+import { bufferToHex, privateToAddress, toBuffer } from "@ethereumjs/util";
 
 import { ERRORS } from "../../../../src/internal/core/errors-list";
 import { numberToRpcQuantity } from "../../../../src/internal/core/jsonrpc/types/base-types";

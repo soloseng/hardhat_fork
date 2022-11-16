@@ -5,7 +5,7 @@ import {
   AccessListEIP2930ValuesArray,
   TxOptions,
 } from "@nomicfoundation/ethereumjs-tx";
-import { Address } from "@nomicfoundation/ethereumjs-util";
+import { Address } from "@ethereumjs/util";
 
 import { InternalError } from "../../../core/providers/errors";
 import * as BigIntUtils from "../../../util/bigint";

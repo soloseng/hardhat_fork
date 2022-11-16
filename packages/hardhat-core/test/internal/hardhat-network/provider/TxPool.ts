@@ -3,12 +3,7 @@ import {
   StateManager,
   DefaultStateManager,
 } from "@nomicfoundation/ethereumjs-statemanager";
-import {
-  Account,
-  Address,
-  bufferToHex,
-  toBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+import { Account, Address, bufferToHex, toBuffer } from "@ethereumjs/util";
 import { assert } from "chai";
 
 import { InvalidInputError } from "../../../../src/internal/core/providers/errors";

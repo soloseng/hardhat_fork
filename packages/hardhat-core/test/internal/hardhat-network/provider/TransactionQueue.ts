@@ -4,7 +4,7 @@ import {
   arrToBufArr,
   bufferToBigInt,
   bufferToHex,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import { assert } from "chai";
 import { randomBytes } from "crypto";
 

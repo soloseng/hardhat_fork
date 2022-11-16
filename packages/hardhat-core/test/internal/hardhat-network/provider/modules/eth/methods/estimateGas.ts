@@ -1,4 +1,4 @@
-import { zeroAddress } from "@nomicfoundation/ethereumjs-util";
+import { zeroAddress } from "@ethereumjs/util";
 import { assert } from "chai";
 import sinon, { SinonSpy } from "sinon";
 import { Client } from "undici";

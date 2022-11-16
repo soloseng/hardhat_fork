@@ -5,11 +5,7 @@ import {
   FeeMarketEIP1559ValuesArray,
   TxOptions,
 } from "@nomicfoundation/ethereumjs-tx/dist/types";
-import {
-  Address,
-  arrToBufArr,
-  bufferToInt,
-} from "@nomicfoundation/ethereumjs-util";
+import { Address, arrToBufArr, bufferToInt } from "@ethereumjs/util";
 
 import {
   InternalError,

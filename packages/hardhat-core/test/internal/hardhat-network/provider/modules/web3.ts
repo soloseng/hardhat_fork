@@ -1,4 +1,4 @@
-import { toBuffer } from "@nomicfoundation/ethereumjs-util";
+import { toBuffer } from "@ethereumjs/util";
 import { assert } from "chai";
 
 import { bufferToRpcData } from "../../../../../src/internal/core/jsonrpc/types/base-types";

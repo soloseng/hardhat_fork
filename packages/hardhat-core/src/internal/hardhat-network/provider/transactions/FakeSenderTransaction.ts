@@ -1,7 +1,7 @@
 import { Common } from "@nomicfoundation/ethereumjs-common";
 import * as rlp from "@nomicfoundation/ethereumjs-rlp";
 import { Transaction, TxData, TxOptions } from "@nomicfoundation/ethereumjs-tx";
-import { Address, arrToBufArr } from "@nomicfoundation/ethereumjs-util";
+import { Address, arrToBufArr } from "@ethereumjs/util";
 
 import {
   InternalError,

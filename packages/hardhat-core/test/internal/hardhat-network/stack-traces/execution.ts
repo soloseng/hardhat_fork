@@ -4,7 +4,7 @@ import {
   Address,
   privateToAddress,
   bigIntToBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import { VM } from "@nomicfoundation/ethereumjs-vm";
 import abi from "ethereumjs-abi";
 

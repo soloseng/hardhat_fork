@@ -6,7 +6,7 @@ import {
   setLengthLeft,
   toBuffer,
   zeroAddress,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import { assert } from "chai";
 
 import {

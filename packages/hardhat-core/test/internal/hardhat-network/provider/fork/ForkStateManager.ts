@@ -5,7 +5,7 @@ import {
   KECCAK256_NULL,
   toBuffer,
   unpadBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import { assert } from "chai";
 import sinon from "sinon";
 

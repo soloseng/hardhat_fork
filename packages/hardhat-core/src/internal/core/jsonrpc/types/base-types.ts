@@ -1,8 +1,4 @@
-import {
-  bufferToHex,
-  isValidAddress,
-  toBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+import { bufferToHex, isValidAddress, toBuffer } from "@ethereumjs/util";
 import * as t from "io-ts";
 
 import * as BigIntUtils from "../../../util/bigint";

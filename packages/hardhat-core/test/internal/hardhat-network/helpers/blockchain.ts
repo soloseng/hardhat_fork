@@ -1,10 +1,5 @@
 import { Transaction, TxData } from "@nomicfoundation/ethereumjs-tx";
-import {
-  Address,
-  AddressLike,
-  bufferToHex,
-  toBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+import { Address, AddressLike, bufferToHex, toBuffer } from "@ethereumjs/util";
 
 import {
   AccessListEIP2930TxData,

@@ -16,7 +16,7 @@ import {
   privateToAddress,
   setLengthLeft,
   toBuffer,
-} from "@nomicfoundation/ethereumjs-util";
+} from "@ethereumjs/util";
 import {
   Bloom,
   EEI,

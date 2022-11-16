@@ -3,7 +3,7 @@ import {
   FeeMarketEIP1559Transaction,
   TxOptions,
 } from "@nomicfoundation/ethereumjs-tx";
-import { Address } from "@nomicfoundation/ethereumjs-util";
+import { Address } from "@ethereumjs/util";
 
 import {
   FeeMarketEIP1559TxData,

@@ -4,7 +4,7 @@ import {
 } from "@nomicfoundation/ethereumjs-evm";
 import { InterpreterStep } from "@nomicfoundation/ethereumjs-evm/dist/interpreter";
 import { Message } from "@nomicfoundation/ethereumjs-evm/dist/message";
-import { Address, bufferToBigInt } from "@nomicfoundation/ethereumjs-util";
+import { Address, bufferToBigInt } from "@ethereumjs/util";
 import { VM } from "@nomicfoundation/ethereumjs-vm";
 import { assertHardhatInvariant } from "../../core/errors";
 

@@ -1,7 +1,7 @@
 import { Block } from "@nomicfoundation/ethereumjs-block";
 import { Common } from "@nomicfoundation/ethereumjs-common";
 import { TypedTransaction } from "@nomicfoundation/ethereumjs-tx";
-import { Address } from "@nomicfoundation/ethereumjs-util";
+import { Address } from "@ethereumjs/util";
 
 import { FeeMarketEIP1559TxData } from "@nomicfoundation/ethereumjs-tx/dist/types";
 import { RpcBlockWithTransactions } from "../../../core/jsonrpc/types/output/block";

@@ -4,7 +4,7 @@ import {
   FeeMarketEIP1559Transaction,
   Transaction,
 } from "@nomicfoundation/ethereumjs-tx";
-import { toBuffer } from "@nomicfoundation/ethereumjs-util";
+import { toBuffer } from "@ethereumjs/util";
 import { assert } from "chai";
 
 import {

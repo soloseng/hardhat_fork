@@ -1,8 +1,4 @@
-import {
-  setLengthLeft,
-  toBuffer,
-  zeroAddress,
-} from "@nomicfoundation/ethereumjs-util";
+import { setLengthLeft, toBuffer, zeroAddress } from "@ethereumjs/util";
 import { assert } from "chai";
 
 import { numberToRpcQuantity } from "../../../../../../../src/internal/core/jsonrpc/types/base-types";

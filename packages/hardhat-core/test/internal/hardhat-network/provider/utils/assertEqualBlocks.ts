@@ -4,7 +4,7 @@ import {
   PostByzantiumTxReceipt,
 } from "@nomicfoundation/ethereumjs-vm";
 import { assert } from "chai";
-import { bufferToHex } from "@nomicfoundation/ethereumjs-util";
+import { bufferToHex } from "@ethereumjs/util";
 
 import { numberToRpcQuantity } from "../../../../../src/internal/core/jsonrpc/types/base-types";
 import { RpcBlockWithTransactions } from "../../../../../src/internal/core/jsonrpc/types/output/block";

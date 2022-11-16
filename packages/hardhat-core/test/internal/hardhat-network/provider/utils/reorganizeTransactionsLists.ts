@@ -1,5 +1,5 @@
 import { TxData } from "@nomicfoundation/ethereumjs-tx";
-import { AddressLike } from "@nomicfoundation/ethereumjs-util";
+import { AddressLike } from "@ethereumjs/util";
 import { assert } from "chai";
 import { List } from "immutable";
 
