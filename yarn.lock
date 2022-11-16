@@ -406,7 +406,7 @@
     bigint-crypto-utils "^3.0.23"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/evm@^1.0.0", "@ethereumjs/evm@^1.2.0":
+"@ethereumjs/evm@^1.2.0", "@ethereumjs/evm@^1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@ethereumjs/evm/-/evm-1.2.2.tgz#8ab944dcf17308fe7ee00b9026984bd756c18501"
   integrity sha512-veqCg9Od9dGvZVdREZvMGm+N4tyNQQd8ny639M9yFxMy7jF36hE6PSicgGZlya/fRpQKCVnosrk5PoM043ZgNQ==
@@ -475,7 +475,7 @@
     async "^3.2.4"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/vm@^6.0.0":
+"@ethereumjs/vm@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@ethereumjs/vm/-/vm-6.2.0.tgz#770c054667147277ac0e69a93355316abe19e70e"
   integrity sha512-YtgR4tHDqVhJE2tzQK58ckSZ2+/AOMSKiuFiQgdlJYQfaCtzJbFIdGdiiItsauPxm1HQr3Yv5kDdJOx+8YbzOA==
