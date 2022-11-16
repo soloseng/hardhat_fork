@@ -1,4 +1,4 @@
-import * as rlp from "@nomicfoundation/ethereumjs-rlp";
+import * as rlp from "@ethereumjs/rlp";
 import { FeeMarketEIP1559Transaction } from "@ethereumjs/tx";
 import {
   FeeMarketEIP1559TxData,
