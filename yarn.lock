@@ -406,10 +406,10 @@
     bigint-crypto-utils "^3.0.23"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/evm@^1.2.3-celo1", "@ethereumjs/evm@^1.2.4":
-  version "1.2.4"
-  resolved "http://localhost:4873/@ethereumjs/evm/-/evm-1.2.4.tgz#c2787bba5723dcb90ad0af79bd1d8bdbe84239b4"
-  integrity sha512-F+SJJ7ENI73A0dNZtz+sqjkE7Qtd5SMnOEs1OOOG89PYTIo4Wbckofq0rea+XpZIxA6Zes3rNWXa6ao9Fl9Vrg==
+"@ethereumjs/evm@npm:@soloseng/ethereumjs-evm@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@soloseng/ethereumjs-evm/-/ethereumjs-evm-1.2.2.tgz#33c554711a3526c7c0b8dc6b2bef27c2f43fdc01"
+  integrity sha512-ShAozDkKVyOOUaklcv4PDYHGur6HnHZi06VVkQukFq0SneulUyZc6JikDwR/d1aoTZhuhTHCPUyMibpvgYK3mg==
   dependencies:
     "@ethereumjs/common" "^3.0.1"
     "@ethereumjs/util" "^8.0.2"
@@ -475,15 +475,15 @@
     async "^3.2.4"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/vm@^6.2.2":
-  version "6.2.2"
-  resolved "http://localhost:4873/@ethereumjs/vm/-/vm-6.2.2.tgz#ed1bb85bda6179bb7519edc914c7e920c8fbf48a"
-  integrity sha512-SqdB1Z9uu4B5FF8FLSt4KyXj1VaCzKGqKmUfKMrcB9jJ1AAi+6Fyba0k5bs5sesd3Vsbu+1gNR6bIDyR9BHy9Q==
+"@ethereumjs/vm@npm:@soloseng/ethereumjs-vm@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@soloseng/ethereumjs-vm/-/ethereumjs-vm-6.2.1.tgz#880d7c264e4b1b87b64b8a60034152fa51d65004"
+  integrity sha512-QxnBZpLEXjUu4grSBC1QWSmnQ1+H8EsKFxOxpy3+O8fh1UrTfMp1evCuXo62eYGEnVpgiEcwzjfszuaHJzaQDw==
   dependencies:
     "@ethereumjs/block" "^4.0.1"
     "@ethereumjs/blockchain" "^6.0.2"
     "@ethereumjs/common" "^3.0.1"
-    "@ethereumjs/evm" "^1.2.3-celo1"
+    "@ethereumjs/evm" "npm:@soloseng/ethereumjs-evm@1.2.2"
     "@ethereumjs/rlp" "^4.0.0"
     "@ethereumjs/statemanager" "^1.0.1"
     "@ethereumjs/trie" "^5.0.1"
