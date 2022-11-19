@@ -34,7 +34,7 @@ export class Web3Module {
   private async _clientVersionAction(): Promise<string> {
     const hardhatPackage = await getPackageJson();
     const ethereumjsVMPackage = require("@ethereumjs/vm/package.json");
-    return `HardhatNetwork/${hardhatPackage.version}/@ethereumjs/vm/${ethereumjsVMPackage.version}`;
+    return `HardhatNetwork/${hardhatPackage.version}/@soloseng/ethereumjs-vm/${ethereumjsVMPackage.version}`;
   }
 
   // web3_sha3
