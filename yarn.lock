@@ -414,10 +414,10 @@
     bigint-crypto-utils "^3.0.23"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/evm@npm:@soloseng/ethereumjs-evm@1.2.2":
+"@ethereumjs/evm@npm:@celo/ethereumjs-evm@1.2.2":
   version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@soloseng/ethereumjs-evm/-/ethereumjs-evm-1.2.2.tgz#33c554711a3526c7c0b8dc6b2bef27c2f43fdc01"
-  integrity sha512-ShAozDkKVyOOUaklcv4PDYHGur6HnHZi06VVkQukFq0SneulUyZc6JikDwR/d1aoTZhuhTHCPUyMibpvgYK3mg==
+  resolved "http://localhost:4873/@celo/ethereumjs-evm/-/ethereumjs-evm-1.2.2.tgz#8e1a9943c480bfb21a42d3d19fb403479f5226bc"
+  integrity sha512-K0CG5yacoFFcS5CWxjUPXGAQGrfV6hFkmc0tdZjKz6NaMq/0X4wji6prxg72qNPBC4nDqwc7ZdJxmaqSKHyBLg==
   dependencies:
     "@ethereumjs/common" "^3.0.1"
     "@ethereumjs/util" "^8.0.2"
@@ -491,15 +491,15 @@
     async "^3.2.4"
     ethereum-cryptography "^1.1.2"
 
-"@ethereumjs/vm@npm:@soloseng/ethereumjs-vm@6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@soloseng/ethereumjs-vm/-/ethereumjs-vm-6.2.1.tgz#880d7c264e4b1b87b64b8a60034152fa51d65004"
-  integrity sha512-QxnBZpLEXjUu4grSBC1QWSmnQ1+H8EsKFxOxpy3+O8fh1UrTfMp1evCuXo62eYGEnVpgiEcwzjfszuaHJzaQDw==
+"@ethereumjs/vm@npm:@celo/ethereumjs-vm@6.2.0":
+  version "6.2.0"
+  resolved "http://localhost:4873/@celo/ethereumjs-vm/-/ethereumjs-vm-6.2.0.tgz#a6ea73a319c8875d074065596a9bc82bd7bd26c2"
+  integrity sha512-ZZbtbYpMMa9aJ1ZLARxlhOAY41s4PKcfFYTvFMLyAZJTrnQl7Oaj0y/gI6nrcTJcV6oq2HVc2MbTm5PnfiW58g==
   dependencies:
     "@ethereumjs/block" "^4.0.1"
     "@ethereumjs/blockchain" "^6.0.2"
     "@ethereumjs/common" "^3.0.1"
-    "@ethereumjs/evm" "npm:@soloseng/ethereumjs-evm@1.2.2"
+    "@ethereumjs/evm" "npm:@celo/ethereumjs-evm@1.2.2"
     "@ethereumjs/rlp" "^4.0.0"
     "@ethereumjs/statemanager" "^1.0.1"
     "@ethereumjs/trie" "^5.0.1"
